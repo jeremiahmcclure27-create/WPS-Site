@@ -1,26 +1,43 @@
 @import "tailwindcss";
 
+/* CSS variables */
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --font-outfit: "Outfit", system-ui, sans-serif;
+  --font-dm-sans: "DM Sans", system-ui, sans-serif;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+/* Custom gradients */
+.gradient-navy {
+  background: linear-gradient(135deg, #1A3A5C 0%, #0F2438 100%);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+.gradient-lime {
+  background: linear-gradient(135deg, #A4D65E 0%, #7DB83D 100%);
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+.gradient-subtle {
+  background: linear-gradient(180deg, #F8FAFB 0%, #FFFFFF 100%);
+}
+
+/* Global behavior */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Scrollbar styles */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #f3f4f6; /* gray-100 */
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #a4d65e; /* lime */
+  border-radius: 0.25rem;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #7db83d; /* lime-dark */
 }
