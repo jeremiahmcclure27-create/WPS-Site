@@ -34,7 +34,7 @@ export default function Header() {
         {/* Logo */}
         <a href="#" className="flex items-center gap-3">
           <Image
-            src="/logo.png"
+            src="/WPS.png"
             alt="WPS Winslett Property Services"
             width={60}
             height={60}
